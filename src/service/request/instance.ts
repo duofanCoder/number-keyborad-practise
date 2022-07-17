@@ -1,6 +1,5 @@
 import axios from 'axios';
 import type { AxiosRequestConfig, AxiosInstance, AxiosError } from 'axios';
-import { REFRESH_TOKEN_CODE } from '@/model';
 import {
   getToken,
   transformRequestData,

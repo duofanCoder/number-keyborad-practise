@@ -1,5 +1,4 @@
 import { NavigationGuardNext, RouteLocationNormalized, Router } from 'vue-router';
-import { useUserStore } from '@/store';
 import { getToken } from '@/utils';
 
 export async function createPermissionGuard(
@@ -10,7 +9,7 @@ export async function createPermissionGuard(
 ) {
   const needLogin = Boolean(to.meta?.auth);
   const needAdmin = Boolean(to.meta?.admin);
-  const userStore = useUserStore();
+  // const userStore = useUserStore();
   const isAdmin = false;
   const isLogin = Boolean(getToken());
 

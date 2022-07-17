@@ -4,17 +4,12 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AvatarCard: typeof import('./src/components/custom/AvatarCard.vue')['default']
-    CampaignCard: typeof import('./src/components/custom/CampaignCard.vue')['default']
-    Comment: typeof import('./src/components/custom/Comment.vue')['default']
     IIcBaselineMood: typeof import('~icons/ic/baseline-mood')['default']
     ILogosGithubIcon: typeof import('~icons/logos/github-icon')['default']
     ITeenyiconsMoodLaughOutline: typeof import('~icons/teenyicons/mood-laugh-outline')['default']
     ITeenyiconsMoodSmileSolid: typeof import('~icons/teenyicons/mood-smile-solid')['default']
     ITeenyiconsMoodSurprisedOutline: typeof import('~icons/teenyicons/mood-surprised-outline')['default']
-    Login: typeof import('./src/components/custom/Login.vue')['default']
     Logo: typeof import('./src/components/common/Logo.vue')['default']
-    Love: typeof import('./src/components/common/Love.vue')['default']
     NAvatar: typeof import('naive-ui')['NAvatar']
     NButton: typeof import('naive-ui')['NButton']
     NCard: typeof import('naive-ui')['NCard']
@@ -30,7 +25,6 @@ declare module 'vue' {
     NSpace: typeof import('naive-ui')['NSpace']
     NTable: typeof import('naive-ui')['NTable']
     NTime: typeof import('naive-ui')['NTime']
-    Upload: typeof import('./src/components/common/Upload.vue')['default']
   }
 }
 

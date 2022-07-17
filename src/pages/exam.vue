@@ -129,11 +129,15 @@
   const currentInputRef = ref('');
 
   const getCurrentData = computed(() => {
-    return dataRef != undefined ? dataRef.value?.at(currentCount.value) : '';
+    return dataRef != undefined
+      ? (dataRef.value?.at(currentCount.value) as String)
+      : ('' as String);
   });
 
   const getNextData = computed(() => {
-    return dataRef != undefined ? dataRef.value?.at(currentCount.value + 1) : '';
+    return dataRef != undefined
+      ? (dataRef.value?.at(currentCount.value + 1) as String)
+      : ('' as String);
   });
   const dataRef = ref<Array<String>>();
   const examDataRef = reactive<Dto.ExamData>({
