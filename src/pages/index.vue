@@ -142,7 +142,7 @@
   });
 
   const goDemo = () => {
-    window.open('http://www.baidu.com', '_blank');
+    window.open('https://github.com/duofanCoder/number-keyborad-practise', '_blank');
   };
 </script>
 <style scoped></style>
