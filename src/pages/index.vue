@@ -3,7 +3,7 @@
     <n-space class="w-full px-6 h-64px border-b" justify="space-between">
       <n-space justify="space-between" class="h-full px-2 space-x-3 w-full" align="center">
         <n-el>
-          <p class="font-bold text-2xl">小键盘练习</p>
+          <p class="font-bold text-2xl hover:cursor-pointer">小键盘练习</p>
         </n-el>
       </n-space>
       <n-space class="w-full h-full px-2 space-x-3" align="center">

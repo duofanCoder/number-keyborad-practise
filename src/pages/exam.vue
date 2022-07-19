@@ -3,7 +3,7 @@
     <n-space class="w-full px-6 min-h-min-64px border-b" justify="space-between">
       <n-space justify="space-between" class="h-full px-2 space-x-3 w-full" align="center">
         <n-el>
-          <p class="font-bold text-2xl">小键盘练习</p>
+          <p class="font-bold text-2xl hover:cursor-pointer">小键盘练习</p>
         </n-el>
       </n-space>
       <n-space class="w-full h-full px-2 space-x-3" align="center">
@@ -203,8 +203,15 @@
   onMounted(() => {
     countDown();
     dataRef.value = Array.from({ length: strArrLength }, () => {
-      const le = Math.floor(Math.random() * 8 + 2);
-      return Math.floor(Math.random() * Math.pow(10, le)) + (Math.pow(10, le) - 1) + '';
+      const le = Math.floor(Math.random() * 6 + 2);
+
+      // 解决随机数1打头bug
+      return (
+        Math.floor(Math.random() * (Math.pow(10, le + 1) - Math.pow(10, le))) +
+        Math.pow(10, le) +
+        ''
+      );
+      // return Math.floor(Math.random() * (Math.pow(10, le+1)-Math.pow(10,le))) + (Math.pow(10, le) - 1);
     });
 
     window.$dialog.create({
